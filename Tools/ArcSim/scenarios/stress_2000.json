@@ -1,0 +1,212 @@
+{
+  "name": "stress_2000",
+  "seed": 2000,
+  "integration_dt_us": 20000,
+  "record_interval_us": 100000,
+  "max_duration_s": 900,
+  "height": {
+    "flat_height_m": 0.0
+  },
+  "sites": [
+    {
+      "name": "Site0",
+      "lat": 38.0,
+      "lon": 126.6
+    },
+    {
+      "name": "Site1",
+      "lat": 38.08,
+      "lon": 126.8
+    },
+    {
+      "name": "Site2",
+      "lat": 38.15,
+      "lon": 126.95
+    },
+    {
+      "name": "Site3",
+      "lat": 38.23,
+      "lon": 127.1
+    },
+    {
+      "name": "Site4",
+      "lat": 38.3,
+      "lon": 127.25
+    },
+    {
+      "name": "Site5",
+      "lat": 38.33,
+      "lon": 127.42
+    }
+  ],
+  "targets": [
+    {
+      "name": "Seoul",
+      "lat": 37.5665,
+      "lon": 126.978
+    },
+    {
+      "name": "SeoulNorth",
+      "lat": 37.63,
+      "lon": 126.93
+    }
+  ],
+  "salvos": [
+    {
+      "site": "Site0",
+      "kind": "Shell",
+      "count": 167,
+      "start_s": 0.0,
+      "interval_s": 0.25,
+      "target": "SeoulNorth",
+      "aim_sigma_m": 500.0,
+      "azimuth_sigma_deg": 0.2,
+      "elevation_sigma_deg": 0.15,
+      "speed_sigma_ratio": 0.01,
+      "site_spread_m": 60.0
+    },
+    {
+      "site": "Site0",
+      "kind": "Shell",
+      "count": 167,
+      "start_s": 20.0,
+      "interval_s": 0.25,
+      "target": "SeoulNorth",
+      "aim_sigma_m": 500.0,
+      "azimuth_sigma_deg": 0.2,
+      "elevation_sigma_deg": 0.15,
+      "speed_sigma_ratio": 0.01,
+      "site_spread_m": 60.0
+    },
+    {
+      "site": "Site1",
+      "kind": "Shell",
+      "count": 167,
+      "start_s": 2.0,
+      "interval_s": 0.25,
+      "target": "SeoulNorth",
+      "aim_sigma_m": 500.0,
+      "azimuth_sigma_deg": 0.2,
+      "elevation_sigma_deg": 0.15,
+      "speed_sigma_ratio": 0.01,
+      "site_spread_m": 60.0
+    },
+    {
+      "site": "Site1",
+      "kind": "Shell",
+      "count": 167,
+      "start_s": 22.0,
+      "interval_s": 0.25,
+      "target": "SeoulNorth",
+      "aim_sigma_m": 500.0,
+      "azimuth_sigma_deg": 0.2,
+      "elevation_sigma_deg": 0.15,
+      "speed_sigma_ratio": 0.01,
+      "site_spread_m": 60.0
+    },
+    {
+      "site": "Site2",
+      "kind": "LightRocket",
+      "count": 167,
+      "start_s": 4.0,
+      "interval_s": 0.25,
+      "target": "Seoul",
+      "aim_sigma_m": 1000.0,
+      "azimuth_sigma_deg": 0.2,
+      "elevation_sigma_deg": 0.15,
+      "speed_sigma_ratio": 0.01,
+      "site_spread_m": 60.0
+    },
+    {
+      "site": "Site2",
+      "kind": "LightRocket",
+      "count": 167,
+      "start_s": 24.0,
+      "interval_s": 0.25,
+      "target": "Seoul",
+      "aim_sigma_m": 1000.0,
+      "azimuth_sigma_deg": 0.2,
+      "elevation_sigma_deg": 0.15,
+      "speed_sigma_ratio": 0.01,
+      "site_spread_m": 60.0
+    },
+    {
+      "site": "Site3",
+      "kind": "LightRocket",
+      "count": 167,
+      "start_s": 6.0,
+      "interval_s": 0.25,
+      "target": "Seoul",
+      "aim_sigma_m": 1000.0,
+      "azimuth_sigma_deg": 0.2,
+      "elevation_sigma_deg": 0.15,
+      "speed_sigma_ratio": 0.01,
+      "site_spread_m": 60.0
+    },
+    {
+      "site": "Site3",
+      "kind": "LightRocket",
+      "count": 167,
+      "start_s": 26.0,
+      "interval_s": 0.25,
+      "target": "Seoul",
+      "aim_sigma_m": 1000.0,
+      "azimuth_sigma_deg": 0.2,
+      "elevation_sigma_deg": 0.15,
+      "speed_sigma_ratio": 0.01,
+      "site_spread_m": 60.0
+    },
+    {
+      "site": "Site4",
+      "kind": "HeavyRocket",
+      "count": 166,
+      "start_s": 8.0,
+      "interval_s": 0.25,
+      "target": "Seoul",
+      "aim_sigma_m": 1500.0,
+      "azimuth_sigma_deg": 0.2,
+      "elevation_sigma_deg": 0.15,
+      "speed_sigma_ratio": 0.01,
+      "site_spread_m": 60.0
+    },
+    {
+      "site": "Site4",
+      "kind": "HeavyRocket",
+      "count": 166,
+      "start_s": 28.0,
+      "interval_s": 0.25,
+      "target": "Seoul",
+      "aim_sigma_m": 1500.0,
+      "azimuth_sigma_deg": 0.2,
+      "elevation_sigma_deg": 0.15,
+      "speed_sigma_ratio": 0.01,
+      "site_spread_m": 60.0
+    },
+    {
+      "site": "Site5",
+      "kind": "HeavyRocket",
+      "count": 166,
+      "start_s": 10.0,
+      "interval_s": 0.25,
+      "target": "Seoul",
+      "aim_sigma_m": 1500.0,
+      "azimuth_sigma_deg": 0.2,
+      "elevation_sigma_deg": 0.15,
+      "speed_sigma_ratio": 0.01,
+      "site_spread_m": 60.0
+    },
+    {
+      "site": "Site5",
+      "kind": "HeavyRocket",
+      "count": 166,
+      "start_s": 30.0,
+      "interval_s": 0.25,
+      "target": "Seoul",
+      "aim_sigma_m": 1500.0,
+      "azimuth_sigma_deg": 0.2,
+      "elevation_sigma_deg": 0.15,
+      "speed_sigma_ratio": 0.01,
+      "site_spread_m": 60.0
+    }
+  ]
+}

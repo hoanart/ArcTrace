@@ -1,0 +1,80 @@
+{
+  "name": "sample_salvo",
+  "seed": 1234,
+  "integration_dt_us": 10000,
+  "record_interval_us": 100000,
+  "max_duration_s": 600,
+  "height": {
+    "flat_height_m": 0.0
+  },
+  "sites": [
+    {
+      "name": "SiteA",
+      "lat": 38.05,
+      "lon": 126.65
+    },
+    {
+      "name": "SiteB",
+      "lat": 38.15,
+      "lon": 126.95
+    },
+    {
+      "name": "SiteC",
+      "lat": 38.3,
+      "lon": 127.2
+    }
+  ],
+  "targets": [
+    {
+      "name": "Seoul",
+      "lat": 37.5665,
+      "lon": 126.978
+    },
+    {
+      "name": "SeoulNorth",
+      "lat": 37.63,
+      "lon": 126.93
+    }
+  ],
+  "salvos": [
+    {
+      "site": "SiteA",
+      "kind": "Shell",
+      "count": 8,
+      "start_s": 0.0,
+      "interval_s": 3.0,
+      "target": "SeoulNorth",
+      "aim_sigma_m": 500.0,
+      "azimuth_sigma_deg": 0.2,
+      "elevation_sigma_deg": 0.15,
+      "speed_sigma_ratio": 0.01,
+      "site_spread_m": 40.0
+    },
+    {
+      "site": "SiteB",
+      "kind": "LightRocket",
+      "count": 12,
+      "start_s": 5.0,
+      "interval_s": 0.5,
+      "target": "Seoul",
+      "aim_sigma_m": 1000.0,
+      "azimuth_sigma_deg": 0.2,
+      "elevation_sigma_deg": 0.15,
+      "speed_sigma_ratio": 0.01,
+      "site_spread_m": 30.0
+    },
+    {
+      "site": "SiteC",
+      "kind": "HeavyRocket",
+      "count": 6,
+      "start_s": 10.0,
+      "interval_s": 6.0,
+      "target": "Seoul",
+      "aim_sigma_m": 1500.0,
+      "azimuth_sigma_deg": 0.2,
+      "elevation_sigma_deg": 0.15,
+      "speed_sigma_ratio": 0.003,
+      "site_spread_m": 20.0
+    }
+  ]
+}
